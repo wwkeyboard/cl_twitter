@@ -2,7 +2,7 @@ require 'multi_json'
 require 'formatador'
 require 'cl_twitter'
 
-class ItemHandler < ClTwitter::Handler
+class ItemHandler < ClTwitter::BareHandler
   def initialize
     @formatador = Formatador.new
     super
@@ -31,4 +31,4 @@ class ItemHandler < ClTwitter::Handler
 end
 
 
-ClTwitter::Client.track('twitter', ItemHandler.pool).run
+ClTwitter::Client.track('#thisisatest', ItemHandler.pool).run

@@ -1,0 +1,5 @@
+source :rubygems
+
+gem 'cl_twitter', :path => '../'
+gem 'multi_json'
+gem 'formatador'
